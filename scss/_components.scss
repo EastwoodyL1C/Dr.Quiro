@@ -68,8 +68,28 @@
 }
 
 .slider {
-
+    padding: 1.2rem 0rem;
     &_item {
         border-radius: 3rem;
     }
+}
+#html .owl-theme {
+    .owl-dots {
+        height: 2rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2.5rem;
+        .owl-dot {
+            span {
+                background: $color-black;
+            }
+            &.active {
+                span {
+                    background: $color-primary;
+                }
+               
+            }
+        }
+    }   
 }
