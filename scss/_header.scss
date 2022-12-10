@@ -1,0 +1,14 @@
+.header {
+    padding: 5rem 0rem;
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}

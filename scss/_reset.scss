@@ -11,6 +11,10 @@ ul {
     padding: 0;
 }
 
+li {
+    list-style: none;
+}
+
 p {
     margin: 0;
 }
@@ -20,5 +24,4 @@ img {
     display: inline-block;
     vertical-align: middle;
     object-fit: cover;
-    height: 100%;
 }

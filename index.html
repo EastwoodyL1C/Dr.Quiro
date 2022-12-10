@@ -12,31 +12,43 @@
 	<link rel="stylesheet"  href="plugins\owl.theme.default.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__logo">Quiro Diagnostic Center</div>
-            <nav class="header__nav">
-                <ul class="nav__ul">
-                    <li class="nav__li"><a class="nav__a_active" href="$" alt="Home">Home</a></li>
-                    <li class="nav__li"><a class="nav__a" href="$" alt="Service">Service</a></li>
-                    <li class="nav__li"><a class="nav__a" href="$" alt="Doctors">Doctors</a></li>
-                    <li class="nav__li"><a class="nav__a" href="$" alt="Gallery">Gallery</a></li>
-                    <li class="nav__li"><a class="nav__a" href="$" alt="Contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header__search">
-                <input type="text" class="header-search__area" placeholder="Search Here">
-                <img class="header-search__area" src="img\icon\search.svg" alt="header__search">
+    <div class="container">
+        <header class="header">
+            <div class="row">
+                <div class="header__item col-4">
+                    <a href="$" alt="logo" class="logo">Quiro Diagnostic Center</a>
+                </div>
+                <div class="header__item col-5">
+                    <nav class="nav">
+                        <ul class="nav__ul">
+                            <li class="nav__li"><a class="nav__a nav__a_active" href="$" alt="Home">Home</a></li>
+                            <li class="nav__li"><a class="nav__a" href="$" alt="Service">Service</a></li>
+                            <li class="nav__li"><a class="nav__a" href="$" alt="Doctors">Doctors</a></li>
+                            <li class="nav__li"><a class="nav__a" href="$" alt="Gallery">Gallery</a></li>
+                            <li class="nav__li"><a class="nav__a" href="$" alt="Contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__item col-3">
+                    <div class="search">
+                        <input type="text" class="search__area" placeholder="Search Here">
+                        <img class="search__icon" src="img\icon\search.svg" alt="search">
+                    </div>
+                </div>
             </div>
+        </header>
+        <div class="slider">
+            <div class="owl-carousel owl-theme">
+                <img class="slider_item" src="img\slide1.png" alt="slide1"></img>
+                <img class="slider_item" src="img\slide2.jpg" alt="slide2"></img>
+                <img class="slider_item" src="img\slide3.jpg" alt="slide3"></img>
+            </div>    
         </div>
-    </header>
+        
 
 
-    <div class="owl-carousel owl-theme">
-		<img class="item" src="img\slide1.png" alt="slide1"></img>
-		<img class="item" src="img\slide2.jpg" alt="slide2"></img>
-		<img class="item" src="img\slide3.jpg" alt="slide3"></img>
-	</div>
+
+    </div>
 </body>
 <script
     src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
