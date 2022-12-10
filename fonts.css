@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Work Sans Regular'), url('fonts\WorkSans-Regular.ttf') format('ttf');
+}
+    
+
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Work Sans SemiBold'), url('fonts\WorkSans-SemiBold.ttf') format('ttf');
+}
+
+
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Work Sans Bold'), url('fonts\WorkSans-Bold.ttf') format('ttf');
+}
