@@ -1,6 +1,6 @@
-.info {
+.service {
     text-align: center;
-    padding: 11.1rem 0rem 12.9rem 0rem;
+    padding: 11.1rem 0rem;
 }
 .form {
     display: flex;
@@ -12,6 +12,7 @@
     flex: 0 1 66.66%;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .title {
     margin-bottom: 5.6rem;
@@ -19,7 +20,7 @@
 .description {
     margin-bottom: 11.1rem;
 }
-.info__item {
+.section__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +29,6 @@
     padding: 4.7rem 2.6rem;
     background: $color-sweet;
     border-radius: 1.5rem;
-    width: 33.33333%;
     &:hover {
         background: $color-primary;        
     }
@@ -39,7 +39,7 @@
         color: $color-white;       
     }
     &:hover a {
-        color: $color-white;    
+        color: $color-white;  
     }
     &:hover path{
         fill: $color-white;       
@@ -47,18 +47,83 @@
 }
 .icon {
     margin-bottom: 4.3rem;
-    width: 100%;
-    max-width: 11rem;
 }
 .subtitle {
     margin-bottom: 1.7rem;
 }
 .spec {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.7rem;
 }
 .link {
     @include text ($font-base, 600, 1.6rem, 1.9rem, $color-primary);
     display: flex;
     align-items: center;
     text-decoration: underline;
+}
+/*peronal*/
+.personal {
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4.7rem 2.6rem;
+        background: $color-sweet;
+        border-radius: 1.5rem;
+        padding: 5.9rem 3.8rem 3.3rem 3.9rem;
+        margin-bottom: 10rem;
+    }
+}
+.form {
+    display: flex;
+    justify-content: center;
+}
+.title-item {
+    display: grid;
+    grid-template-areas:
+    "img id"
+    "img wrk";
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    &__profile {
+        grid-area: img;
+        & img:hover {
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 22px 70px 4px;
+            border-radius: 4.5rem;
+            transform: translateY(-5%);
+            transition: 0.3s all ease-in-out;
+        }
+    }
+    &__id {
+        grid-area: id;
+        align-content: flex-end;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__workplace {
+        grid-area: wrk;
+        align-content: flex-start;
+    }
+}
+.desc {
+    margin-bottom: 2.8rem;
+}
+
+.btn {
+    &__link:hover {
+        box-shadow: rgba(240, 46, 170, 0.4) 2px 2px, rgba(240, 46, 170, 0.3) 4px 4px, rgba(240, 46, 170, 0.2) 6px 6px, rgba(240, 46, 170, 0.1) 8px 8px, rgba(240, 46, 170, 0.05) 10px 10px;
+        border-radius: 5rem;;
+    }
+    &__key {
+        padding: 1.1rem 4.9rem;
+        background: $color-primary;
+        border: 0;
+        border-radius: 5rem;
+        @include text ($font-base, 600, 2rem, 2.3rem, $color-white);
+        &:hover {
+            color: $color-shadow;
+        }
+    }
 }

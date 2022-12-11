@@ -49,12 +49,12 @@
     position: relative;
     &__area {
         width: 100%;
-        padding-right: 4rem;
         background: $color-black;
         border-radius: 5rem;
         padding: 1.3rem 1.8rem;
         border: 0;
         outline: 0;
+        padding-right: 4rem;
         @include text ($font-base, 400, 1.6rem, 1.6rem, $color-white);
     }
     &__area::placeholder {
@@ -73,6 +73,7 @@
     padding: 1.2rem 0rem;
     &_item {
         border-radius: 3rem;
+        cursor: pointer;
     }
 }
 #html .owl-theme {
@@ -95,5 +96,3 @@
         }
     }   
 }
-
-/*info*/
