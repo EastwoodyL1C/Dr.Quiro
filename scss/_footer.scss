@@ -1,32 +1,37 @@
 .footer {
     display: flex;
     flex-direction: row;
+    background: $color-sweet;
+    margin-top: 13.1rem;
+    padding: 10.6rem 17.5rem 7.7rem 14.7rem;
+    &__item {
+        display: flex;
+        align-items: start;
+        gap: 10.8rem;
+    }
 }
 .about {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
-.subtitle {
-}
-.spec {
-}
-.col-4 {
+    width: calc(100% - 61.45%);
 }
 .contacts {
+    width: calc(100% - 74.51%);
 }
-.detail h3 {
+.detail__h3 {
     margin-bottom: 0.9rem;
 }
-.detail p {
-     margin-bottom: 3.3rem;
-}
-.col-3 {
+.detail__p {
+    margin-bottom: 3.3rem;
+    & span {
+        margin-right: 1.6rem;
+    }
 }
 .opening {
-
+    margin-bottom: 1.5rem;
 		&__li {
+            margin-bottom: 1.5rem;
 		}
 }
