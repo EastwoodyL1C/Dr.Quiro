@@ -31,6 +31,8 @@
     background: $color-sweet;
     border-radius: 1.5rem;
     flex: 0 1 calc(33.33% - 3rem);
+    align-content: center;
+    flex-grow: 1;
     &:hover {
         background: $color-primary;        
     }
@@ -86,6 +88,7 @@
 .wall {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .title-item {
     display: grid;
