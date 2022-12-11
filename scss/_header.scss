@@ -11,12 +11,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-content: space-around;
 }
 
 .col-4 {
     display: flex;
     flex-direction: column;
     flex: 0 1 calc(33.33% - 3rem);
-    margin-bottom: 3rem;
 }

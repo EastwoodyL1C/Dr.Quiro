@@ -1,3 +1,4 @@
+/*service*/
 .service {
     text-align: center;
     padding: 11.1rem 0rem;
@@ -62,6 +63,7 @@
 }
 /*peronal*/
 .personal {
+    margin-bottom: 10rem;
     &__item {
         display: flex;
         flex-direction: column;
@@ -71,12 +73,17 @@
         background: $color-sweet;
         border-radius: 1.5rem;
         padding: 5.9rem 3.8rem 3.3rem 3.9rem;
-        margin-bottom: 10rem;
+        margin-bottom: 3rem;
     }
 }
 .form {
     display: flex;
     justify-content: center;
+    
+}
+.wall {
+    display: flex;
+    flex-wrap: wrap;
 }
 .title-item {
     display: grid;

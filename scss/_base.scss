@@ -26,6 +26,11 @@ h4 {
 }
 /***********/
 
+/*subscribtion*/
+h5 {
+    @include text ($font-base, 700, 3.6rem, 4.2rem, $color-white);
+}
+
 p {
     @include text ($font-base, 400, 1.6rem, 1.9rem, $color-dark)
 }
