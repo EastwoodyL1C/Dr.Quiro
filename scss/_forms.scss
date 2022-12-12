@@ -32,7 +32,6 @@
     border-radius: 1.5rem;
     flex: 0 1 calc(33.33% - 3rem);
     align-content: center;
-    flex-grow: 1;
     &:hover {
         background: $color-primary;        
     }
@@ -54,6 +53,9 @@
 }
 .subtitle {
     margin-bottom: 1.7rem;
+    display: flex;
+    white-space: nowrap;
+    word-break: keep-all;
 }
 .spec {
     margin-bottom: 1.7rem;
