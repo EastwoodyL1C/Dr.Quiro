@@ -122,15 +122,15 @@
         padding-right: 4rem;
         background: #F9F1FE;
         border-radius: 50px;
-        padding: 2.5rem 4rem 2.5rem 3.1rem;
-        width: 66.66%;
+        padding: 2.8rem 4rem 2.5rem 2.8rem;
+        width: $BIWidth;
     }
     &__area::placeholder {
         @include text ($font-base, 400, 1.6rem, 1.6rem, $color-bg_area);
     }   
     &__btn {
         position: absolute;
-        right: calc(calc(100% - 66.66%)/2 + 1.4rem);
+        right: calc(calc(100% - #{$BIWidth})/2 + 1.4rem);
         top: 47%;
         transform: translateY(-50%);
         padding: 1rem 2.5rem;

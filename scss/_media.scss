@@ -12,9 +12,6 @@
         justify-content: space-around;
         gap: 2rem;
     }
-    .col-4 {
-        flex: 0 1 calc(100% - 3rem);
-    }
     .personal {
         &__item {
             flex: 0 1 calc(50% - 3rem);
