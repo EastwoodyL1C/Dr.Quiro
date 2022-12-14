@@ -1,0 +1,16 @@
+/*breakpoint xxl*/
+
+.list-header {
+    font-weight: 700;
+}
+.content-hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+.animation {
+    transform: scaleY(1);
+    transition: 0.2s all ease-in-out;
+}

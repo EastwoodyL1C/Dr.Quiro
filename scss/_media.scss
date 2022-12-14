@@ -2,9 +2,49 @@
     .container {
         padding: 0rem 8rem;
     }
+    /*burger menu*/
     .nav {
-        display: none;
+        background: $color-menu;
+        width: 150vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 20rem 10rem;
+        transform: translateX(0%);
+        top: 0;
+        right: 0;
+        z-index: 2;
+        position: fixed;
+        &__ul {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        &__a {
+            font-size: 4rem;
+            &.nav__a_active {
+                font-size: 4rem;
+            }
+        }
+        &__li {
+            margin-bottom: 3rem;
+        }
     }
+    .menu {
+        position: fixed;
+        top: 4.7rem;
+        right: 4.7rem;
+        width: 4rem;
+        height: 4rem;
+        z-index: 3;
+        background: $color-sweet;
+        color: $color-black;
+        transition: 0.3 all ease-in-out;
+    }
+    .header__menu {
+        display: block;
+    }
+    /***************************************/
+
     .search {
         display: none;
     }
@@ -14,7 +54,7 @@
     }
     .personal {
         &__item {
-            flex: 0 1 calc(50% - 3rem);
+            flex: 0 1 calc(100% - 3rem);
         }
     }
     .col-8 {
@@ -48,7 +88,7 @@
         }
     }
     .col-4 {
-        flex: 0 1 calc(50% - 3rem);
+        flex: 0 1 calc(80% - 3rem);
     }
     .detail__h3 {
         display: flex;
@@ -64,6 +104,9 @@
             flex-wrap: wrap;
             justify-content: space-between;
         }
+    }
+    .col-5 {
+        width: 100%;
     }
 }
 
