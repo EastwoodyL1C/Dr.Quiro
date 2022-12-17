@@ -13,10 +13,10 @@ button.addEventListener("click", function () {
     content.classList.toggle('content-hidden')
 
     if (content.classList.contains('content-hidden')) {
-        button.textContent = "Открыть блок";
-    } else {
-        button.textContent = 'Закрыть блок';
-    }
+    	button.textContent = ' ☰';
+	} else {
+		button.textContent = ' X ';
+	}
     */
 
 });
