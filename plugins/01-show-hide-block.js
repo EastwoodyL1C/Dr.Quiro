@@ -4,7 +4,7 @@ const content = document.querySelector('#content');
 button.addEventListener("click", function () {
 
 	if (content.classList.toggle('content-hidden')) {
-		button.textContent = ' X';
+		button.textContent = ' ☰';
 	} else {
 		button.textContent = ' X ';
 	}
