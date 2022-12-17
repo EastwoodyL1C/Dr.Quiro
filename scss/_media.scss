@@ -3,17 +3,23 @@
         padding: 0rem 8rem;
     }
     /*burger menu*/
+    .xs-hide-menu {
+        visibility: hidden;;
+    }
+    .xs-hide-input {
+        visibility: hidden;
+    }
     .nav {
         background: $color-menu;
         width: 190vh;
         height: 100vh;
         display: flex;
         flex-direction: column;
-        padding: 20rem 10rem;
+        padding: 30rem 10rem;
         transform: translateX(0%);
-        top: 0;
-        right: 0;
-        z-index: 2;
+        top: 0rem;
+        right: 0rem;
+        z-index: 3;
         position: fixed;
         &__ul {
             flex-direction: column;
@@ -46,14 +52,17 @@
             font-size: 2.2rem;
         }
     }
+    .search {
+        position: fixed;
+        z-index: 3;
+        top: 15rem;
+        right: 10rem;
+    }
     .header__menu {
         display: block;
     }
+    
     /***************************************/
-
-    .search {
-        display: none;
-    }
     .section {
         justify-content: space-around;
         gap: 2rem;

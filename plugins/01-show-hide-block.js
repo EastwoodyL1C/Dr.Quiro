@@ -1,22 +1,26 @@
 const button = document.querySelector('#button');
 const content = document.querySelector('#content');
+const HIDDEN_CLASS = 'xs-hide-menu';
 
 button.addEventListener("click", function () {
+content.classList.toggle(HIDDEN_CLASS);
+ if (content.classList.includes(HIDDEN_CLASS)) {
+  button.textContent = ' ☰';
+ } else {
+  button.textContent = ' X ';
+ }
 
-	if (content.classList.toggle('content-hidden')) {
-		button.textContent = ' ☰';
-	} else {
-		button.textContent = ' X ';
-	}
 
-    /*
-    content.classList.toggle('content-hidden')
+});
+const input = document.querySelector('#search');
+const HIDDEN_INPUT = 'xs-hide-input';
 
-    if (content.classList.contains('content-hidden')) {
-    	button.textContent = ' ☰';
-	} else {
-		button.textContent = ' X ';
-	}
-    */
+button.addEventListener("click", function () {
+input.classList.toggle(HIDDEN_INPUT)
+ if (content.classList.includes(HIDDEN_INPUT)) {
+ 	button.textContent = ' ☰';
+} else {
+	button.textContent = ' X ';
+}
 
 });
